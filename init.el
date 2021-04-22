@@ -5,8 +5,10 @@
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 
-;; ////////////////////THEME/////////////////////
-(load-theme 'tomi t)
+
+;;TODO(tomi) Delete this comment load theme
+;;(load-theme 'tomi t)
+
 ;; set the font
 (set-frame-font "Liberation Mono 12")
 
@@ -52,6 +54,38 @@
 (global-set-key (kbd "M-2") 'split-window-right)
 
 (global-set-key (kbd "M-b") 'switch-to-buffer)
+(global-set-key (kbd "M-B") 'switch-to-buffer-other-window)
 
 (global-set-key (kbd "<M-return>") 'dired-display-file)
 
+
+
+
+
+;; ////////////////////THEME/////////////////////
+(deftheme tomi
+  "Created 2020-12-17.")
+
+(custom-theme-set-faces
+ 'tomi
+ '(cursor ((t (:background "#00ff00"))))
+
+ '(default ((t (:inherit nil :extend nil :stipple nil 
+		:background "#1c1d21" :foreground "#ccfccb" 
+		:weight normal :width normal))))
+
+ '(font-lock-constant-face ((t (:foreground "#00ff00"))))
+ '(font-lock-string-face ((t (:foreground "#00ff00"))))
+
+ '(font-lock-comment-face ((t (:foreground "#508991"))))
+ '(font-lock-comment-delimiter-face ((default (:inherit (font-lock-comment-face)))))
+
+ '(font-lock-function-name-face ((t (:inherit default))))
+ '(font-lock-variable-name-face ((t (:inherit default))))
+ '(font-lock-preprocessor-face ((t (:inherit default))))
+ '(font-lock-type-face ((t (:inherit default))))
+
+ '(font-lock-keyword-face ((t (:foreground "#f2a359" :weight normal))))
+)
+
+(provide-theme 'tomi)

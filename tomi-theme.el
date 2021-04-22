@@ -25,7 +25,7 @@
  '(font-lock-preprocessor-face ((t (:inherit font-lock-builtin-face))))
  '(font-lock-regexp-grouping-backslash ((t (:inherit (bold)))))
  '(font-lock-regexp-grouping-construct ((t (:inherit (bold)))))
- '(font-lock-string-face ((t (:foreground "PaleGreen1"))))
+ '(font-lock-string-face ((t (:foreground "green3"))))
  '(font-lock-type-face ((t (:foreground "orange2" :weight normal))))
  '(font-lock-variable-name-face ((t (:foreground "NavajoWhite1"))))
  '(font-lock-warning-face ((t (:foreground "#ccaa8f"))))
